@@ -178,3 +178,9 @@ For more questions/discussions also feel free to stop by #nanoGPT on Discord:
 ## acknowledgements
 
 All nanoGPT experiments are powered by GPUs on [Lambda labs](https://lambdalabs.com), the best Cloud GPU provider thank you :)
+
+## A little humor
+
+Why do programmers prefer dark mode?
+
+Because light attracts bugs!
