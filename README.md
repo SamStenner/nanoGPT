@@ -178,3 +178,7 @@ For more questions/discussions also feel free to stop by #nanoGPT on Discord:
 ## acknowledgements
 
 All nanoGPT experiments are powered by GPUs on [Lambda labs](https://lambdalabs.com), the best Cloud GPU provider thank you :)
+
+## Joke of the Day
+
+Why don't scientists trust atoms? Because they make up everything!
