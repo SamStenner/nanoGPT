@@ -1,4 +1,4 @@
-> Why did the chicken cross the road? To get to its chicks!
+> Why did the chicken cross the road? To get to his wife hen!
 
 # nanoGPT
 
