@@ -1,5 +1,5 @@
-// [Genie] Add a humorous question about why a chicken crossed the road at the beginning of the file.
-Why did the chicken cross the road? To get to the other side!
+// [Genie] Update the punchline of a joke from "To get to the other side!" to "To get to his wife hen!".
+Why did the chicken cross the road? To get to his wife hen!
 
 # nanoGPT
 
