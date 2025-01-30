@@ -1,3 +1,4 @@
+// [Genie] Add a humorous introductory line about a chicken crossing the road before presenting information about nanoGPT.
 > Why did the chicken cross the road? To get to the other side!
 
 # nanoGPT
