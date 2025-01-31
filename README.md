@@ -1,4 +1,5 @@
-> Why did the chicken cross the road? To get to the other side!
+// [Genie] Add a humorous joke about a chicken crossing the road at the beginning of the README file.
+Why did the chicken cross the road? To get to the other side!
 
 # nanoGPT
 
