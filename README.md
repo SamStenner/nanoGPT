@@ -1,4 +1,4 @@
-> Why did the chicken cross the road? To get to England!
+> Why did the chicken cross the road? To get to <change>the other side!</change>
 
 # nanoGPT
 
