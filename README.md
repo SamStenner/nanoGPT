@@ -1,4 +1,5 @@
 > Why did the chicken cross the road? To get to the other side!
+> And then he crossed back when he realized he forgot his GPU!
 
 # nanoGPT
 
