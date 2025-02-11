@@ -1,4 +1,4 @@
-Why did the chicken cross the road? To get to the other side!
+What do you call a dinosaur that uses Deep Learning? A Dino4RTX!
 
 # nanoGPT
 
