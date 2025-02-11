@@ -1,4 +1,4 @@
-Why did T-Rex cross the road? Because chickens didn't exist yet!
+Why did Tiger cross the road? Because chickens didn't exist yet!
 
 # nanoGPT
 
