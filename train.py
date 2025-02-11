@@ -99,6 +99,7 @@ device_type = 'cuda' if 'cuda' in device else 'cpu' # for later use in torch.aut
 # note: float16 would require us to change the code to use a GradScaler
 ptdtype = {'float32': torch.float32, 'bfloat16': torch.bfloat16}[dtype]
 ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=device_type, dtype=ptdtype)
+scaler = torch.cuda.amp.GradScaler() if device_type == 'cuda' else None
 
 # poor man's data loader, TODO evaluate need for actual DataLoader
 data_dir = os.path.join('data', dataset)
@@ -175,7 +176,7 @@ if init_from == 'resume':
     optimizer.load_state_dict(checkpoint['optimizer'])
 
 # compile the model
-if compile:
+if compile and not (torch.cuda.is_available() and sys.version_info[1]>=12):
     print("compiling the model... (takes a ~minute)")
     unoptimized_model = model
     model = torch.compile(model) # requires PyTorch 2.0
@@ -269,8 +270,15 @@ while True:
             model.require_backward_grad_sync = (micro_step == gradient_accumulation_steps - 1)
         with ctx:
             logits, loss = model(X, Y)
-        loss.backward()
-    optimizer.step()
+        if scaler:
+            scaler.scale(loss).backward()
+        else:
+            loss.backward()
+    if scaler:
+        scaler.step(optimizer)
+        scaler.update()
+    else:
+        optimizer.step()
     optimizer.zero_grad(set_to_none=True)
 
     # timing and logging
