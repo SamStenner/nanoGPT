@@ -79,7 +79,7 @@ config = {k: globals()[k] for k in config_keys} # will be useful for logging
 # various inits, derived attributes, I/O setup
 ddp = int(os.environ.get('RANK', -1)) != -1 # is this a ddp run?
 if ddp:
-    init_process_group(backend=backend)
+    init_process_group(backend, rank=int(os.environ['RANK']), world_size=int(os.environ['WORLD_SIZE']))
     ddp_rank = int(os.environ['RANK'])
     ddp_local_rank = int(os.environ['LOCAL_RANK'])
     device = f'cuda:{ddp_local_rank}'
