@@ -1,4 +1,4 @@
-Why did Tiger cross road? To prove he wasn't chicken!
+Why did Duck cross road? To prove he's not chicken!
 
 # nanoGPT
 
