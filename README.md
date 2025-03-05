@@ -1,4 +1,4 @@
-> Why did the chicken cross the road? To get to the other side!
+> Why did the chicken cross the road? To get to the other side! (of the data center when your single GPU can't keep up with training speeds)
 
 # nanoGPT
 
