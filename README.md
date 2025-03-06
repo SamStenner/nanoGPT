@@ -1,4 +1,4 @@
-> Why did the chicken cross the road? To get to the other side!
+> Why don't you ever want to play hide and seek with a small language model? Because the nanoGPT is so tiny, but its token fees are still enormous!
 
 # nanoGPT
 
